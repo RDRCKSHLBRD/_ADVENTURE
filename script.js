@@ -372,8 +372,7 @@ const locations = {
       name: "Sphere Of Light",
       description: "Sphere Of Light - Explore its surroundings.",
       connections: {
-          "Left": "40",
-          "Right": "43",
+         
           "Top Right": "41"
       }
   },
