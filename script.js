@@ -7,6 +7,7 @@ const locations = {
           "Right": "7",
           "Top": "3",
           "Top Right": "5",
+          "Down Left": "9",
           "Down Right": "8"
       }
   },
@@ -22,8 +23,8 @@ const locations = {
       name: "The Rooted Tunnels",
       description: "The Rooted Tunnels - Explore its surroundings.",
       connections: {
-          "Left": "2",
           "Top": "11",
+          "Right": "1",
           "Top Right": "4"
       }
   },
@@ -32,7 +33,7 @@ const locations = {
       description: "The Large Trees - Explore its surroundings.",
       connections: {
           "Right": "5",
-          "Down Right": "3"
+          "Down Left": "3"
       }
   },
   "5": {
@@ -40,7 +41,6 @@ const locations = {
       description: "Mountains - Explore its surroundings.",
       connections: {
           "Left": "4",
-          "Right": "6",
           "Top": "13",
           "Down": "1",
           "Down Right": "6"
@@ -51,7 +51,6 @@ const locations = {
       description: "Grasses - Explore its surroundings.",
       connections: {
           "Right": "7",
-          "Top": "2",
           "Top Left": "5"
       }
   },
@@ -61,7 +60,9 @@ const locations = {
       connections: {
           "Left": "1",
           "Right": "15",
-          "Top": "1"
+          "Top": "14",
+          "Top Left": "6",
+          "Down": "16"
       }
   },
   "8": {
@@ -79,9 +80,10 @@ const locations = {
       name: "Plains",
       description: "Plains - Explore its surroundings.",
       connections: {
-          "Left": "8",
-          "Right": "19",
-          "Top": "1"
+          "Right": "8",
+          "Left": "19",
+          "Top": "1",
+          "Down Right": "18"
       }
   },
   "10": {
@@ -107,8 +109,9 @@ const locations = {
       connections: {
           "Left": "11",
           "Right": "13",
+          "Top": "22",
           "Down": "4",
-          "Down Left": "11"
+          
       }
   },
   "13": {
@@ -144,6 +147,7 @@ const locations = {
       connections: {
           "Left": "8",
           "Right": "24",
+          "Top Right": "15",
           "Top": "7",
           "Down": "17"
       }
@@ -155,7 +159,7 @@ const locations = {
           "Right": "25",
           "Top": "16",
           "Top Left": "8",
-          "Down Right": "26"
+          "Down Left": "26"
       }
   },
   "18": {
@@ -197,7 +201,7 @@ const locations = {
       name: "The Land Of Mirrors",
       description: "The Land Of Mirrors - Explore its surroundings.",
       connections: {
-          "Right": "31",
+          "Left": "31",
           "Top Right": "32",
           "Down": "12"
       }
@@ -266,8 +270,11 @@ const locations = {
       name: "Ocean",
       description: "Ocean - Explore its surroundings.",
       connections: {
+          "Left": "14",
           "Top": "20",
-          "Down": "37"
+          "Down": "37",
+          "Down Left": "15",
+          "Down Right": "29"
       }
   },
   "31": {
@@ -276,15 +283,17 @@ const locations = {
       connections: {
           "Left": "38",
           "Right": "22",
-          "Down Left": "22"
+          
+         
       }
   },
   "32": {
       name: "Outer Spaces",
       description: "Outer Spaces - Explore its surroundings.",
       connections: {
-          "Right": "43"
-      }
+          "Right": "43",
+          "Down Left": "22"
+        }
   },
   "33": {
       name: "The Red Island",
@@ -307,7 +316,7 @@ const locations = {
       description: "Waterfall - Explore its surroundings.",
       connections: {
           "Top": "29",
-          "Top Right": "41"
+          "Down": "41"
       }
   },
   "36": {
@@ -330,7 +339,8 @@ const locations = {
       name: "Sky Of Rainbows",
       description: "Sky Of Rainbows - Explore its surroundings.",
       connections: {
-          "Right": "31"
+          "Right": "31",
+          "Top Left": "39"
       }
   },
   "39": {
@@ -353,7 +363,7 @@ const locations = {
       name: "The White Mountain",
       description: "The White Mountain - Explore its surroundings.",
       connections: {
-          "Right": "28",
+          "Top Right": "28",
           "Top": "35",
           "Down Left": "42"
       }
