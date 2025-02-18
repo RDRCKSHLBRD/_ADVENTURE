@@ -140,7 +140,7 @@ header {
 /* Footer */
 footer {
   background-color: #333;
-  padding: .3em;
+  padding: .2em;
   
   margin-top: auto;
 }
@@ -171,18 +171,19 @@ margin-right: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
   }
 
   #nav-options {
     width: 100%;
   }
+
   .nav-grid {
     max-width: 240px;
     gap: 8px;
     grid-template-columns: repeat(3, 60px);
     grid-template-rows: repeat(3, 60px);
   }
+
   .nav-grid button {
     width: 60px;
     height: 60px;
