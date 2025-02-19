@@ -99,7 +99,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.75rem;
+  font-size: 0.70rem;
   transition: all 0.2s ease;
   text-align: center;
 }
@@ -140,53 +140,70 @@ header {
 /* Footer */
 footer {
   background-color: #333;
-  padding: .2em;
-  
   margin-top: auto;
 }
 
 .FootTag {
 text-align: right;
+padding: .1em;
 margin-right: 2em;
 }
 
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  
 
   .container {
     flex-direction: column;
   }
 
   .game-area {
-    /* order on top */
     order: 1;
-    /* single column for the internal grid */
     grid-template-columns: 1fr;
   }
+
   .sidebar {
-    width: 100%;
+    
+    width: 95%;
     order: 2;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
+    justify-content: center;
   }
 
+  
+
+  /* Ensure nav-options acts as a flex container */
   #nav-options {
+    
     width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
+  /* Centering the nav grid */
   .nav-grid {
-    max-width: 240px;
+    width: auto; /* Let content define width */
+    max-width: 320px;
+   
     gap: 8px;
-    grid-template-columns: repeat(3, 60px);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(60px, 1fr));
     grid-template-rows: repeat(3, 60px);
+    justify-content: center;
+    margin: 0 auto; /* Force centering */
   }
 
   .nav-grid button {
-    width: 60px;
+    width: 100%;
     height: 60px;
     font-size: 0.7rem;
   }
+
+  /* Prevent horizontal scrolling */
+  body, html {
+    overflow-x: hidden;
+  }
 }
+
+
